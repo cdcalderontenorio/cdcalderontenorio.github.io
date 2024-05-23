@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  background-color: rgb(31, 30, 30);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 22px;
+  color: whitesmoke;
+
+}
+
+.section-heading {
+  font-size: 50px;
+  padding-top: 25px;
+}
+
+strong {
+  color: rgb(7, 168, 7);
+}
+
+p,
+td {
+  line-height: 1.5;
+}
+
+p{
+  width: 60%;
+}
+
+.display-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+/*table*/
+table {
+  text-align: center;
+  margin: 20px auto;
+  overflow: auto;
+  height: 240px;
+  border-spacing: 0;
+}
+
+th {
+  font-size: 25px;
+  border: 2px solid gray;
+  border-collapse: collapse;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+td {
+  border: 2px solid gray;
+  width: 300px;
+}
+
+/*header*/
+header {
+  background-color: rgb(3, 32, 3);
+}
+
+.header-nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-name {
+  color: whitesmoke;
+  font-size: 25px;
+  text-align: left;
+  padding-left: 100px;
+  padding-top: 25px;
+}
+
+.header-nav {
+  color: whitesmoke;
+  text-align: left;
+  padding-right: 100px;
+  padding-top: 25px;
+}
+
+.header-anchor {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+}
+
+/*intro*/
+.intro{
+  height: 700px;
+  background-image: linear-gradient(rgb(3, 32, 3), rgb(31, 30, 30));
+}
+
+.intro-h1 {
+  color: white;
+  font-size: 100px;
+  text-emphasis: filled green;
+  padding-top: 100px;
+}
+
+/*work*/
+.work {
+  padding-top: 50px;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#work-p{
+  margin-top: 0;
+}
+
+.work-catalog-h2 {
+  margin: 0;
+  font-size: 35px;
+  text-align: left;
+  text-indent: 10px;
+}
+
+.work-catalog-container {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.work-catalog-tile {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-catalog-tile-footer{
+  background-color: rgb(62, 60, 60);
+}
+
+.work-image {
+  width: 100%;
+  height: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.work-catalog-p {
+  margin: 0;
+  text-align: left;
+  padding-left: 10px;
+}
+
+/*contact*/
+.contact {
+  height: 400px;
+  background-image: linear-gradient(white, black);
+}
+
+.contact-p {
+  margin-bottom: 40px;
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+}
+
+/*footer*/
+footer{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-signature {
+  color: gray;
+  font-size: 15px;
+}
+
+li {
+  display: inline;
+  letter-spacing: 2px;
+  margin: 0;
+  font-weight: 300;
+  padding: 20px 18px 10px 18px;
+}
+
+/*images*/
+.circle {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+/*Media queries for smartphones screens*/
+@media (max-width: 768px ) {
+  body{
+    font-size: 18px
+  };
+
+  .header-nav{
+    display: none;
+  };
+
+  .section-heading{
+    font-size: 40px;
+  }
+
+  th{
+    font-size: 20px;
+  }
+
+  td{
+    width: auto;
+  }
+
+  header{
+    display: none;
+  }
+
+  .intro-h1{
+    font-size: 70px;
+    width: 90%;
+  }
+
+  .work-catalog-h2{
+    font-size: 25px;
+  }
+
+  .work-catalog-tile{
+    width: 90%;
+  }
+
+  .work-catalog-p{
+    font-size: 12px;
+  }
+
+  .work-image{
+    height: 230px;
+  }
+
+  .contact-p{
+    font-size: 30px;
+  }
+}
